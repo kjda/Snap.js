@@ -558,7 +558,7 @@
         module.exports = Snap;
     }
     if (typeof ender === 'undefined') {
-        this.Snap = Snap;
+        window["Snap"] = Snap;
     }
     if ((typeof define === "function") && define.amd) {
         define("snap", [], function() {
